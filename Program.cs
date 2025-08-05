@@ -1,15 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// mvc şablonu için aşağıdaki ifade yazılıyor.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(); //projeye mvc şablonunu dahil etmek için bu ifade yazılıyor
+
 var app = builder.Build();
 
-// mvc
-// rest api
-// razor page
-
-app.MapGet("/", () => "Hello World!");
-
-app.MapGet("/abc", () => "deneme");
+app.MapDefaultControllerRoute();//{controller=Home}/{action=Index}/{id?} (action metodu bu şekilde çağrılıyor)
 
 app.Run();
