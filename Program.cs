@@ -4,6 +4,14 @@ builder.Services.AddControllersWithViews(); //projeye mvc şablonunu dahil etmek
 
 var app = builder.Build();
 
-app.MapDefaultControllerRoute();//{controller=Home}/{action=Index}/{id?} (action metodu bu şekilde çağrılıyor)
+app.MapControllerRoute(
+
+name: "Default",
+
+pattern: "{controller=Meeting}/{action=Index}/{id?}" //(action metodu bu şekilde çağrılıyor) BAŞKA BİR YÖNTEM
+
+
+
+);
 
 app.Run();
