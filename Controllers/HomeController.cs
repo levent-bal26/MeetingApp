@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Mvc; //public class HomeController: Controller classının name spacesi
+using Microsoft.AspNetCore.Mvc; //3. işlem-Controller sınıfının namespace'i
 
 
-namespace MeetingApp.Controllers //HomeController dosyasını MeetingApp projesine bağlamak için yazılıyor
+namespace MeetingApp.Controllers //1. işlem-MeetingApp projesi altında controller namespace'i tanımlıyoruz    
 
 {
-        public class HomeController : Controller //MeetingApp projesinin altında bu dosya bir class olarak tanımlanmış oluyor 
+        public class HomeController : Controller //2. işlem-MeetingApp projesi altında controller namespace'nin içinde HomeController class'ı tanımlanıyor
 
     {
 
@@ -12,10 +12,10 @@ namespace MeetingApp.Controllers //HomeController dosyasını MeetingApp projesi
         //localhost/home
         //localhost/home/index
 
-        public string Index()
+        public IActionResult Index()
 
         {
-            return "home/index"; //içinde bulunduğu class’ın action metodu oluyor       
+            return View(); //4. işlem-HomeController class’ın action metodu oluyor       
         }
 
     }

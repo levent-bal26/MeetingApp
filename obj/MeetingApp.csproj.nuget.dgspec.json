@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LEVENT\\Desktop\\MeetingApp\\MeetingApp.csproj": {}
+    "C:\\Users\\LEVENT\\OneDrive\\ESKİ BELGELER\\Desktop\\MeetingApp\\MeetingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LEVENT\\Desktop\\MeetingApp\\MeetingApp.csproj": {
+    "C:\\Users\\LEVENT\\OneDrive\\ESKİ BELGELER\\Desktop\\MeetingApp\\MeetingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LEVENT\\Desktop\\MeetingApp\\MeetingApp.csproj",
+        "projectUniqueName": "C:\\Users\\LEVENT\\OneDrive\\ESKİ BELGELER\\Desktop\\MeetingApp\\MeetingApp.csproj",
         "projectName": "MeetingApp",
-        "projectPath": "C:\\Users\\LEVENT\\Desktop\\MeetingApp\\MeetingApp.csproj",
+        "projectPath": "C:\\Users\\LEVENT\\OneDrive\\ESKİ BELGELER\\Desktop\\MeetingApp\\MeetingApp.csproj",
         "packagesPath": "C:\\Users\\LEVENT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LEVENT\\Desktop\\MeetingApp\\obj\\",
+        "outputPath": "C:\\Users\\LEVENT\\OneDrive\\ESKİ BELGELER\\Desktop\\MeetingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LEVENT\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
