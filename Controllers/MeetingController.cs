@@ -8,14 +8,14 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
         public IActionResult Index()
         {
-            return View();//4. işlem-MeetingController class’ın action metodu oluyor    
+            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Index View'e gönderme yapıyor.    
         }
 
         public IActionResult Apply()
 
         {
 
-            return View();
+            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Apply View'e gönderme yapıyor.
 
         }
 
@@ -23,7 +23,7 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
         {
 
-            return View();
+            return View();//4. işlem-MeetingController class’ın action metodu oluyor. List View'e gönderme yapıyor.
 
         }
 
