@@ -86,3 +86,6 @@ C:\Users\LEVENT\OneDrive\ESKİ BELGELER\Desktop\MeetingApp\obj\Debug\net9.0\refi
 C:\Users\LEVENT\OneDrive\ESKİ BELGELER\Desktop\MeetingApp\obj\Debug\net9.0\MeetingApp.pdb
 C:\Users\LEVENT\OneDrive\ESKİ BELGELER\Desktop\MeetingApp\obj\Debug\net9.0\MeetingApp.genruntimeconfig.cache
 C:\Users\LEVENT\OneDrive\ESKİ BELGELER\Desktop\MeetingApp\obj\Debug\net9.0\ref\MeetingApp.dll
+C:\Users\ESOGU\Desktop\MeetingApp\obj\Debug\net9.0\MeetingApp.RazorAssemblyInfo.cache
+C:\Users\ESOGU\Desktop\MeetingApp\obj\Debug\net9.0\MeetingApp.RazorAssemblyInfo.cs
+C:\Users\ESOGU\Desktop\MeetingApp\obj\Debug\net9.0\MeetingApp.sourcelink.json

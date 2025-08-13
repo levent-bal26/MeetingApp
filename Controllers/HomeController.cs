@@ -15,7 +15,7 @@ namespace MeetingApp.Controllers //1. işlem-MeetingApp projesi altında control
         public IActionResult Index()
 
         {
-            return View(); //4. işlem-HomeController class’ın action metodu oluyor       
+            return View(); //4. işlem-HomeController class’ın action metodu oluyor. Views\Home\Index.cshtml'e gönderme yapıyor.       
         }
 
     }
