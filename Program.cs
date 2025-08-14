@@ -4,9 +4,9 @@ builder.Services.AddControllersWithViews(); //projeye mvc şablonunu dahil etmek
 
 var app = builder.Build();
 
-app.UseStaticFiles();//wwwroot altındaki static dosyalara bu sayede erişim sağlanmış olacak
+app.UseStaticFiles();//wwwroot altındaki static (Bootstsrap) dosyalara bu sayede erişim sağlanmış olacak
 
-app.UseRouting(); //Routing yönlendirmesi için medial veri aktif edilmiş oluyor
+app.UseRouting(); //Routing yönlendirmesi için middleware veri aktif edilmiş oluyor
 
 app.MapControllerRoute(
 
