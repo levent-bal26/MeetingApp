@@ -1,31 +1,31 @@
-using Microsoft.AspNetCore.Mvc; //3. işlem-Controller sınıfının namespace'i
+using Microsoft.AspNetCore.Mvc;
+using MeetingApp.Models; // MeetingInfo class'ı burada
 
-
-namespace MeetingApp.Controllers //1. işlem-MeetingApp projesi altında controller namespace'i tanımlıyoruz    
-
+namespace MeetingApp.Controllers
 {
-        public class HomeController : Controller //2. işlem-MeetingApp projesi altında controller namespace'nin içinde HomeController class'ı tanımlanıyor
-
+    public class HomeController : Controller
     {
-
-        //localhost
-        //localhost/home
-        //localhost/home/index
-
+        // localhost
+        // localhost/home
+        // localhost/home/index
         public IActionResult Index()
-
         {
+            int saat = DateTime.Now.Hour;
 
-            int saat = DateTime.Now.Hour;//Dinamik veri eklemek için yapılıyor                           
+            // ViewBag yerine ViewData ile dinamik veri gönderiyoruz
+            ViewData["Selamlama"] = saat > 12 ? "İyi günler" : "Günaydın";
+            ViewData["UserName"] = "Çınar";
 
-            //ViewBag.Selamlama= saat > 12 ? "İyi günler":"Günaydın"; //Dinamik veri eklemek için yapılıyor.Home/Index.cshtml dosyasına gönderme yapıyor
+            var MeetingInfo = new MeetingInfo()
+            {
+                Id = 1,
+                Location = "İstanbul, Abc Kongre Merkezi",
+                Date = new DateTime(2024, 01, 20, 20, 0, 0),
+                NumberOfPeople = 100
+            };
 
-            ViewData["Selamlama"]= saat > 12 ? "İyi günler":"Günaydın";
-            ViewData["UserName"]= "Çınar";
-
-
-            return View(); //4. işlem-HomeController class’ın action metodu oluyor. Views\Home\Index.cshtml'e gönderme yapıyor.       
+            // 🔥 Burada modeli View'e gönderiyoruz
+            return View(MeetingInfo);
         }
-
     }
 }
