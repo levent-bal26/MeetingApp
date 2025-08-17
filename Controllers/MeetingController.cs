@@ -5,12 +5,12 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
     public class MeetingController : Controller//2. işlem-MeetingApp projesi altında controller namespace'nin içinde MeetingController class'ı tanımlanıyor
     {
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Index.cshtml'e gönderme yapıyor.    
         }
-
+        [HttpGet]
         public IActionResult Apply()
 
         {
@@ -19,6 +19,16 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
         }
 
+        [HttpPost]
+        public IActionResult Apply(String Name, String Phone, String Email, bool WillAttend)
+
+        {
+
+            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Apply.cshtml'e gönderme yapıyor.
+
+        }
+
+        [HttpGet]
              public IActionResult List()
 
         {
