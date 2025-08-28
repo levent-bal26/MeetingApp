@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;//3. işlem-Controller sınıfının namespace'i
 
+using MeetingApp.Models;
+
 namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controller namespace'i tanımlıyoruz   
 {
 
@@ -20,7 +22,7 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
         }
 
         [HttpPost]
-        public IActionResult Apply(String Name, String Phone, String Email, bool WillAttend)
+        public IActionResult Apply(UserInfo model)
 
         {
 
@@ -29,7 +31,7 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
         }
 
         [HttpGet]
-             public IActionResult List()
+        public IActionResult List()
 
         {
 
