@@ -14,7 +14,7 @@ namespace MeetingApp.Controllers
 
             // ViewBag yerine ViewData ile dinamik veri gönderiyoruz
             ViewData["Selamlama"] = saat > 12 ? "İyi günler" : "Günaydın";
-            ViewData["UserName"] = "Çınar";
+            //ViewData["UserName"] = "Çınar";
 
             var MeetingInfo = new MeetingInfo()
             {

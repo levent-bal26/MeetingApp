@@ -7,11 +7,7 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
     public class MeetingController : Controller//2. işlem-MeetingApp projesi altında controller namespace'nin içinde MeetingController class'ı tanımlanıyor
     {
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Index.cshtml'e gönderme yapıyor.    
-        }
+        
         [HttpGet]
         public IActionResult Apply()
 
@@ -25,8 +21,11 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
         public IActionResult Apply(UserInfo model)
 
         {
+            Repository.CreateUser(model);
 
-            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Apply.cshtml'e gönderme yapıyor.
+            ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
+
+            return View("Thanks", model);//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Apply.cshtml'e gönderme yapıyor.
 
         }
 
