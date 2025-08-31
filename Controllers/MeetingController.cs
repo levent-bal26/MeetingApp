@@ -34,7 +34,7 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
         {
 
-            return View();//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\List.cshtml'e gönderme yapıyor.
+            return View(Repository.Users);//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\List.cshtml'e gönderme yapıyor.
 
         }
 
