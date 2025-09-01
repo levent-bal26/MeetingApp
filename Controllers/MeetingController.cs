@@ -38,6 +38,11 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
 
         }
 
+//meeting/details/2
+        public IActionResult Details(int id)
+        {
 
+            return View(Repository.GetById(id));
+        }
     }
 }
