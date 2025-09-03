@@ -21,11 +21,21 @@ namespace MeetingApp.Controllers//1. işlem-MeetingApp projesi altında controll
         public IActionResult Apply(UserInfo model)
 
         {
-            Repository.CreateUser(model);
+            if (ModelState.IsValid)
+            {
+                Repository.CreateUser(model);
 
-            ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
+                ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
 
-            return View("Thanks", model);//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Apply.cshtml'e gönderme yapıyor.
+                return View("Thanks", model);//4. işlem-MeetingController class’ın action metodu oluyor. Views\Meeting\Apply.cshtml'e gönderme yapıyor. 
+
+            }
+            else
+            {
+                return View(model);
+            }
+
+            
 
         }
 
